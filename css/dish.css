@@ -641,6 +641,9 @@ header .right .menu_area .menu_txt .navi ul li:nth-child(5) .sub1 li img{
     margin-right:40px;
     font-weight:400;
 }
+.vertical span {
+    font-size:23px;
+}
 .vertical .v_txt > p {
     color:rgba(245, 245, 245, 0.835);
     line-height:30px;
