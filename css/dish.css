@@ -1578,6 +1578,9 @@ footer .copyright {
     .vertical .v_txt > .oneline {
         margin-top:20px;
     }
+    .vertical .v_txt > .twoline {
+        margin-top: 8px;
+    }
     .s6 {
        background-size: cover !important;
     }
