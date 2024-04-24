@@ -1067,7 +1067,7 @@
     gsap.registerPlugin(ScrollTrigger);
     //s1
     ScrollTrigger.matchMedia({
-        "(min-width: 360px)": function () {
+        "(min-width: 300px)": function () {
             ScrollTrigger.create({
                 trigger: '.s1 .swiper-container',
                 start: () => `top ${document.querySelector('.s1 .swiper-container').offsetHeight}`,
@@ -1135,7 +1135,7 @@
 
     //s6 (pc)
     ScrollTrigger.matchMedia({
-        "(min-width: 1401px)": function() {
+        "(min-width: 1400px)": function() {
             ScrollTrigger.create({
             trigger: ".s6", 
             start: "top 65%",
@@ -1182,7 +1182,7 @@
                 ease: "power2.out"
                 });
                 gsap.to(".s6 .s6_opacity",{
-                    opacity:0.3,
+                    opacity:0.1,
                     duration:1,
                     ease: "power2.out"
                 });
