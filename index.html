@@ -966,7 +966,7 @@
                     </div>
                     <div class="s7_banner_right">
                         <p class="eng p22">GIFT BOX</p>
-                        <p class="kor p35">사랑하는 사람을 위한<br>선물 포장</p>
+                        <p class="kor p35">사랑하는 <br class="mobr">사람을 위한<br>선물 포장</p>
                         <a href="#" class="eng arrow_bn p20">
                             <p>VIEW MORE</p> 
                             <i class="fa-solid fa-arrow-right-long"></i>
@@ -1067,7 +1067,7 @@
     gsap.registerPlugin(ScrollTrigger);
     //s1
     ScrollTrigger.matchMedia({
-        "(min-width: 300px)": function () {
+        "(min-width: 360px)": function () {
             ScrollTrigger.create({
                 trigger: '.s1 .swiper-container',
                 start: () => `top ${document.querySelector('.s1 .swiper-container').offsetHeight}`,
@@ -1135,16 +1135,17 @@
 
     //s6 (pc)
     ScrollTrigger.matchMedia({
-        "(min-width: 1400px)": function() {
+        "(min-width: 1401px)": function() {
             ScrollTrigger.create({
-            trigger: ".s6", 
-            start: "top 65%",
-            end: "bottom top",
+            trigger: ".s6", // 트리거로 s6 요소 사용
+            start: "top 65%", // 트리거의 시작점 설정
+            end: "bottom top", // 트리거의 끝 지점 설정
             onEnter: self => {
-                gsap.to(".s6", {
+                gsap.to(".s6", { // ".s6" 요소에 대해 애니메이션을 적용합니다.
                 backgroundSize: "100%",
-                duration: 0.005,
-                ease: "power2.out"
+                //scale: 1, // scale 속성을 1로 변경합니다.
+                duration: 0.005, // 애니메이션 지속 시간을 1초로 설정합니다.
+                ease: "power2.out" // 애니메이션의 이징을 지정합니다.
                 });
                 gsap.to(".s6 .s6_opacity",{
                     opacity:0.3,
@@ -1153,10 +1154,11 @@
                 });
             },
             onLeaveBack: () => {
-                gsap.to(".s6", {
+                gsap.to(".s6", { // ".s6" 요소에 대해 애니메이션을 적용합니다.
                 backgroundSize: "150%",
-                duration: 0.005,
-                ease: "power2.out"
+            //    scale: 1.2, // scale 속성을 1로 변경합니다.
+                duration: 0.005, // 애니메이션 지속 시간을 1초로 설정합니다.
+                ease: "power2.out" // 애니메이션의 이징을 지정합니다.
                 });
                 gsap.to(".s6 .s6_opacity",{
                     opacity:0.85,
@@ -1171,28 +1173,28 @@
     ScrollTrigger.matchMedia({
         "(min-width: 1024px)": function() {
             ScrollTrigger.create({
-            trigger: ".s6",
-            start: "top 65%",
-            end: "bottom top",
+            trigger: ".s6", // 트리거로 s6 요소 사용
+            start: "top 65%", // 트리거의 시작점 설정
+            end: "bottom top", // 트리거의 끝 지점 설정
             onEnter: self => {
-                gsap.to(".s6", {
+                gsap.to(".s6", { // ".s6" 요소에 대해 애니메이션을 적용합니다.
                 backgroundSize: "130%",
-                
-                duration: 0.005,
-                ease: "power2.out"
+                //scale: 1, // scale 속성을 1로 변경합니다.
+                duration: 0.005, // 애니메이션 지속 시간을 1초로 설정합니다.
+                ease: "power2.out" // 애니메이션의 이징을 지정합니다.
                 });
                 gsap.to(".s6 .s6_opacity",{
-                    opacity:0.1,
+                    opacity:0.3,
                     duration:1,
                     ease: "power2.out"
                 });
             },
             onLeaveBack: () => {
-                gsap.to(".s6", {
+                gsap.to(".s6", { // ".s6" 요소에 대해 애니메이션을 적용합니다.
                 backgroundSize: "180%",
-            
-                duration: 0.005,
-                ease: "power2.out"
+            //    scale: 1.2, // scale 속성을 1로 변경합니다.
+                duration: 0.005, // 애니메이션 지속 시간을 1초로 설정합니다.
+                ease: "power2.out" // 애니메이션의 이징을 지정합니다.
                 });
                 gsap.to(".s6 .s6_opacity",{
                     opacity:0.85,
