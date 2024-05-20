@@ -435,6 +435,7 @@ header .right .menu_area .menu_txt .navi ul li:nth-child(5) .sub1 li img{
 .s2 .swiper2 .swiper-slide .dish_img {
     position:relative;
     width:250px;
+    margin:0 auto;
 }
 .s2 .swiper2 .swiper-slide .dish_img svg {
     position:absolute;
@@ -450,6 +451,7 @@ header .right .menu_area .menu_txt .navi ul li:nth-child(5) .sub1 li img{
 }
 .s2 .s2_txt p {
     margin-top:10px;
+    white-space:nowrap;
 }
 .s2 br {
     display:none;
